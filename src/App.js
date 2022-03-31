@@ -7,14 +7,11 @@ import Playmaking from './Playmaking';
 import Rebounding from './Rebounding';
 import DefensiveStats from './DefensiveStats';
 import SizeSeed from './SizeSeed';
-
-/*
-
-*/
+import StatComp from './StatComp';
 
 export default function App() {
   return (
-      <div className='bg-dark'>
+      <div className='bg-dark text-white'>
         <Header />
           <Routes>
             <Route exact path='' element={<Home />} />
@@ -23,6 +20,7 @@ export default function App() {
             <Route exact path='/rebounding' element={<Rebounding />} />
             <Route exact path='/defense' element={<DefensiveStats />} />
             <Route exact path='/sizeseed' element={<SizeSeed />} />
+            <Route exact path='/statcomp' element={<StatComp />} />
           </Routes>
         <Footer />
       </div>
@@ -33,63 +31,29 @@ export default function App() {
 
 function Tabs () {
   return (
-    <div>
+    <div class='dropdown'>
         <ul class="nav nav-pills nav-justified">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" 
-            data-toggle="dropdown" 
-            href="#" role="button" 
-            aria-haspopup="true" 
-            aria-expanded="false">Offense</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" 
-              data-toggle="dropdown" 
-              href="#" role="button" 
-              aria-haspopup="true" 
-              aria-expanded="false">Defense/Rebounding</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" 
-              data-toggle="dropdown" 
-              href="#" role="button" 
-              aria-haspopup="true" 
-              aria-expanded="false">Size/Seed</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
+            <a class="text-white nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Player Stat Comparison</a>
+            <Link class="nav-link text-white" to="/statcomp">Player Stat Comparison</Link>
           </li>
         </ul>
-      </div>
+    </div>
   ); 
-}
+} 
 
 
 function Footer() {
   return (
     <div className="footer">
-      <footer class="py-5 bg-dark fixed-bottom">
+      <footer class="py-5 bg-secondary">
         <div class="container">
           <p class="m-0 text-center text-white">
             Copyright &copy; Your Website 2020
