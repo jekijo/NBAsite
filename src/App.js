@@ -31,15 +31,16 @@ export default function App() {
 
 function Tabs () {
   return (
-    <div class='dropdown'>
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item dropdown">
-            <a class="text-white nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+    <div>
+        <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+            <Link class="nav-link text-white" to="/">Offense</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link text-white" to="/">Defense</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link text-white" to="/">Size and Seed</Link>
           </li>
           <li class="nav-item">
             <Link class="nav-link text-white" to="/statcomp">Player Stat Comparison</Link>
@@ -68,7 +69,11 @@ function Footer() {
 function Header() {
   return (
     <div class='bg-dark'>
-      <h1 class="text-white text-center">Stat<br/>Coyote</h1>
+      <ul class='nav nav-pill nav-justified'>
+        <li class='nav-item'>
+          <Link class="text-white text-center nav-link" to='/'><h1>Stat<br/>Coyote</h1></Link>
+        </li>
+      </ul>
         <hr className='color3'/><hr className='color1'/><hr className='color2'/>
         <hr class='bg-white'/>
         <Tabs />
