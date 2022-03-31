@@ -1,15 +1,24 @@
 import './App.css';
+import { Route } from 'react-router-dom';
+import Home from './Home';
+import Shooting from './Shooting';
+import Playmaking from './Playmaking';
+import Rebounding from './Rebounding';
+import DefensiveStats from './DefensiveStats';
+import SizeSeed from './SizeSeed';
 
 
 export default function App() {
   return (
       <div class='bg-dark'>
-        <h1 class="text-white text-center">Stat<br/>Coyote</h1>
-        <hr className='color3'/><hr className='color1'/><hr className='color2'/>
-        <hr class='bg-white'/>
-        <Tabs />
-        <Welcome />
-        <Foot />
+        <Header />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/shooting' component={Shooting} />
+        <Route exact path='/playmaking' component={Playmaking} />
+        <Route exact path='/rebounding' component={Rebounding} />
+        <Route exact path='/defense' component={DefensiveStats} />
+        <Route exact path='/sizeseed' component={SizeSeed} />
+        <Footer />
       </div>
   );
 }
@@ -39,7 +48,7 @@ function Tabs () {
               data-toggle="dropdown" 
               href="#" role="button" 
               aria-haspopup="true" 
-              aria-expanded="false">Defense & Rebounding</a>
+              aria-expanded="false">Defense/Rebounding</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -53,7 +62,7 @@ function Tabs () {
               data-toggle="dropdown" 
               href="#" role="button" 
               aria-haspopup="true" 
-              aria-expanded="false">Size & Seed</a>
+              aria-expanded="false">Size/Seed</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -71,21 +80,7 @@ function Tabs () {
 }
 
 
-
-function Welcome () {
-  return (
-    <div class='text-white'>
-      <hr class='bg-white'/>
-      <h4>Welcome to this site</h4>
-      <p>This is where I will add text about the site. blah blah blah.</p>
-    </div>
-  );
-}
-
-
-
-
-function Foot() {
+function Footer() {
   return (
     <div className="footer">
       <footer class="py-5 bg-dark fixed-bottom">
@@ -97,4 +92,16 @@ function Foot() {
       </footer>
     </div>
   );
+}
+
+
+function Header() {
+  return (
+    <div class='bg-dark'>
+      <h1 class="text-white text-center">Stat<br/>Coyote</h1>
+        <hr className='color3'/><hr className='color1'/><hr className='color2'/>
+        <hr class='bg-white'/>
+        <Tabs />
+    </div>
+  )
 }
