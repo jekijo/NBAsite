@@ -2,10 +2,8 @@ import React from 'react';
 import './App.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
-import Shooting from './Shooting';
-import Playmaking from './Playmaking';
-import Rebounding from './Rebounding';
-import DefensiveStats from './DefensiveStats';
+import Offense from './Offense';
+import Defense from './Defense';
 import SizeSeed from './SizeSeed';
 import StatComp from './StatComp';
 
@@ -15,10 +13,8 @@ export default function App() {
         <Header />
           <Routes>
             <Route exact path='' element={<Home />} />
-            <Route exact path='/shooting' element={<Shooting />} />
-            <Route exact path='/playmaking' element={<Playmaking />} />
-            <Route exact path='/rebounding' element={<Rebounding />} />
-            <Route exact path='/defense' element={<DefensiveStats />} />
+            <Route exact path='/offense' element={<Offense />} />
+            <Route exact path='/defense' element={<Defense />} />
             <Route exact path='/sizeseed' element={<SizeSeed />} />
             <Route exact path='/statcomp' element={<StatComp />} />
           </Routes>
@@ -34,13 +30,13 @@ function Tabs () {
     <div>
         <ul class="nav nav-tabs nav-justified">
         <li class="nav-item">
-            <Link class="nav-link text-white" to="/">Offense</Link>
+            <Link class="nav-link text-white" to="/offense">Offense</Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link text-white" to="/">Defense</Link>
+            <Link class="nav-link text-white" to="/defense">Defense</Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link text-white" to="/">Size and Seed</Link>
+            <Link class="nav-link text-white" to="/sizeseed">Size and Seed</Link>
           </li>
           <li class="nav-item">
             <Link class="nav-link text-white" to="/statcomp">Player Stat Comparison</Link>
