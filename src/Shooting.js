@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Shooting () {
     return (
       <div class='text-white bg-dark'>

@@ -1,5 +1,6 @@
+import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
 import Shooting from './Shooting';
 import Playmaking from './Playmaking';
@@ -7,17 +8,22 @@ import Rebounding from './Rebounding';
 import DefensiveStats from './DefensiveStats';
 import SizeSeed from './SizeSeed';
 
+/*
+
+*/
 
 export default function App() {
   return (
-      <div class='bg-dark'>
+      <div className='bg-dark'>
         <Header />
-        <Route exact path='/' component={Home} />
-        <Route exact path='/shooting' component={Shooting} />
-        <Route exact path='/playmaking' component={Playmaking} />
-        <Route exact path='/rebounding' component={Rebounding} />
-        <Route exact path='/defense' component={DefensiveStats} />
-        <Route exact path='/sizeseed' component={SizeSeed} />
+          <Routes>
+            <Route exact path='' element={<Home />} />
+            <Route exact path='/shooting' element={<Shooting />} />
+            <Route exact path='/playmaking' element={<Playmaking />} />
+            <Route exact path='/rebounding' element={<Rebounding />} />
+            <Route exact path='/defense' element={<DefensiveStats />} />
+            <Route exact path='/sizeseed' element={<SizeSeed />} />
+          </Routes>
         <Footer />
       </div>
   );
