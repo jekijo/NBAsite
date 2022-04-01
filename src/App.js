@@ -50,6 +50,7 @@ function Tabs () {
 function Footer() {
   return (
     <div className="footer">
+      <hr className='color4'/><hr className='color5'/><hr className='color6'/>
       <footer class="py-5 bg-secondary">
         <div class="container text-center">
           <h5>Socials:</h5>
@@ -73,7 +74,7 @@ function Header() {
     <div class='bg-dark'>
       <ul class='nav nav-pill nav-justified'>
         <li class='nav-item'>
-          <Link class="text-white text-center nav-link" to='/'><h1>Stat<br/>Coyote</h1></Link>
+          <Link class="text-white text-center nav-link" to='/'><h1 class='fw-bold'>Stat<br/>Coyote</h1></Link>
         </li>
       </ul>
         <hr className='color3'/><hr className='color1'/><hr className='color2'/>

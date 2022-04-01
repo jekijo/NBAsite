@@ -23,6 +23,32 @@
 }
 
 
+.color4 {
+  opacity: 1.0;
+  color: turquoise;
+  height: 1px;
+  border: none;
+  border-top: 2px solid turquoise;
+}
+
+.color5 {
+  opacity: 1.0;
+  color: rgb(250, 92, 118);
+  height: 1px;
+  border: none;
+  border-top: 2px solid rgb(250, 92, 118);
+}
+
+.color6 {
+  opacity: 1.0;
+  color: orange;
+  height: 1px;
+  border: none;
+  border-top: 2px solid orange;
+}
+
+
+
 .fa {
     padding: 20px;
     font-size: 30px;
