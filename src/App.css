@@ -21,3 +21,27 @@
     border: none;
     border-top: 10px solid orange;
 }
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  .fa:hover {
+    opacity: .3;
+  }
+  
+  .fa-github {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .fa-linkedin {
+    background: #246596;
+    color: white;
+  }
