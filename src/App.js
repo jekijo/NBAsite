@@ -55,8 +55,8 @@ function Footer() {
         <div class="container text-center">
           <h5>Socials:</h5>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-github text-center"></a>
+          <a href="https://www.linkedin.com/in/jeffery-jones-a7404b214/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/jekijo" class="fa fa-github text-center"></a>
           <p><br/>123jkjones@gmail.com</p>
           <hr/>
           <p class="m-0 text-center text-white">
