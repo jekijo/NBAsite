@@ -71,7 +71,6 @@ function Header() {
         </li>
       </ul>
         <hr className='color3'/><hr className='color1'/><hr className='color2'/>
-        <hr class='bg-white'/>
         <Tabs />
     </div>
   )
