@@ -9,7 +9,7 @@ export default function Defense () {
     return (
       <div class='text-white bg-dark lh-lg mx-5'>
         <hr class='bg-dark'/>
-        <p class='fs-1'>Defense</p>
+        <p class='fs-1'>Defense and Rebounds</p>
         <p></p>
         <img src={BLK} alt=''/>
         <img src={OREB} alt=''/>

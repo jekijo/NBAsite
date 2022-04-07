@@ -33,7 +33,7 @@ function Tabs () {
             <Link class="nav-link text-white" to="/offense">Offense</Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link text-white" to="/defense">Defense</Link>
+            <Link class="nav-link text-white" to="/defense">Defense and Rebounds</Link>
           </li>
           <li class="nav-item">
             <Link class="nav-link text-white" to="/sizeseed">Size and Seed</Link>
