@@ -15,14 +15,16 @@ export default function Offense () {
         <hr class='bg-dark'/>
         <p class='fs-1'>Offense</p>
         <p></p>
-        <img src={TPP} alt=''/>
-        <img src={TPA} alt=''/>
-        <img src={AST} alt=''/>
-        <img src={FGA} alt=''/>
-        <img src={FGP} alt=''/>
-        <img src={FTA} alt=''/>
-        <img src={PPG} alt=''/>
-        <img src={TOV} alt=''/>
+        <div class='text-center'>
+          <img src={TPP} alt=''/>
+          <img src={TPA} alt=''/>
+          <img src={AST} alt=''/>
+          <img src={FGA} alt=''/>
+          <img src={FGP} alt=''/>
+          <img src={FTA} alt=''/>
+          <img src={PPG} alt=''/>
+          <img src={TOV} alt=''/>
+        </div>
       </div>
     );
   }

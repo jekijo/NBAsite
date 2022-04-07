@@ -5,7 +5,8 @@ export default function Home () {
       <div className='text-white bg-dark lh-lg mx-5 fs-5'>
         <hr className='bg-dark'/>
         <p class='fs-1'>Welcome to Stat Coyote!</p>
-        <p>This site hosts a multitude of NBA data analysis. The main focus is to showcase the comparison of 
+        <p>This site hosts a multitude of NBA data analysis. All data presented on this site was collected
+          using a webscraper in tandem with a SQL database. The main focus is to showcase the comparison of 
           league averages between NBA champions and the rest of the league over the past twenty years. In each 
           tab you will find graphs visualizing these comparisons based on stat categories including 
           but not limited to: shooting percentages, points per game, rebounds, fouls, and average team height.

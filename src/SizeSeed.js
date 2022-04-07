@@ -8,8 +8,10 @@ export default function SizeSeed () {
         <hr class='bg-dark'/>
         <p class='fs-1'>Size and Seeding</p>
         <p></p>
-        <img src={Height} alt=''/>
-        <img src={Seed} alt=''/>
+        <div class='text-center'>
+          <img src={Height} alt=''/>
+          <img src={Seed} alt=''/>
+        </div>
       </div>
     );
   }

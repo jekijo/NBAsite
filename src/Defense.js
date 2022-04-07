@@ -11,11 +11,13 @@ export default function Defense () {
         <hr class='bg-dark'/>
         <p class='fs-1'>Defense and Rebounds</p>
         <p></p>
-        <img src={BLK} alt=''/>
-        <img src={OREB} alt=''/>
-        <img src={PF} alt=''/>
-        <img src={REB} alt=''/>
-        <img src={STL} alt=''/>
+        <div class='text-center'>
+          <img src={BLK} alt=''/>
+          <img src={OREB} alt=''/>
+          <img src={PF} alt=''/>
+          <img src={REB} alt=''/>
+          <img src={STL} alt=''/>
+        </div>
       </div>
     );
   }
