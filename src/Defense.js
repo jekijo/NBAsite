@@ -30,6 +30,7 @@ export default function Defense () {
             <img src={STL} alt=''/>
           </div>
           <BlkStlFExp />
+          <hr></hr>
         </div>
       </div>
     );
