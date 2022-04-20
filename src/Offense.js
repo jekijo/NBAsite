@@ -46,12 +46,15 @@ export default function Offense () {
             <p></p>
             <img src={TOV} alt=''/>
           </div>
+          <AstToExp />
           <br></br>
           <p class='fs-3 text-left'>Free Throw Attempts</p>
           <br></br>
           <div class='text-center'>
             <img src={FTA} alt=''/>
           </div>
+          <FreeThrowExp />
+          <hr></hr>
         </div>
       </div>
     );
@@ -104,7 +107,46 @@ function FieldGoalExp () {
     <p>
       Similar to three pointers, overall field goal attempts have also increased over the past 20 years. While championship
       teams are seen with attempts below the league average as much as above, one thing that stands firm is a consistent 
-      elite level of shooting efficiency. Only two champions since the year 2000 have had a below average shooting percentage.
+      elite level of shooting efficiency. Only two champions since the year 2000 have had a below average shooting percentage,
+      and in 2018 the champions shot above 50% as a team. Field goal attempts may not be statistically significant when 
+      considering contention, but without a high level of efficiency competing for a championship will be even more 
+      difficult than it already is.
+
+    </p>
+  )
+}
+
+
+function AstToExp () {
+  return (
+    <p>
+      Taking good care of the ball is usually a decent indicator of how well your players are handling the offense. 
+      Well, at least on the surface. Over the past two decades the championship teams seem to bounce between being 
+      above average in turnovers and below average in turnovers. While often frustrating for coaches, fans and players, 
+      turnovers do not appear to have a significant role in determining the success of an offense. What is immediately
+      more necessary how well the team is sharing the ball. Only four teams since the 2000 season have assisted the 
+      ball less than the league average. In addition, as the league has set a slight upward trend in assist totals 
+      (most likely due to an aformentioned increase of pace) the championship teams appear to be at the forefront of 
+      this shift. Since 2013, championship teams seem to grow larger deficits in assist totals above the league average.
+      Because of this, a strong indication of where your team stands in respects to the title is how well they share
+      on offense. Hero ball doesn't appear to be a good gameplan as the NBA evolves.
+    </p>
+  )
+}
+
+
+function FreeThrowExp () {
+  return (
+    <p>
+      The final category to discuss on the offensive side of the ball is free throw attempts. Free throw percentage 
+      was not taken into consideration, although it may be added in a later date as it could also provide insightful
+      findings. However, a perhaps surprising trend we see is that overall free throw attempts are on a downward trend 
+      in the NBA. Not only this, but championship teams don't appear to be significantly better than the league average,
+      especially over the past seven years. Getting to the line for free shots may intuitively be a key factor to offensive
+      success, and with the rise of players like James Harden and Joel Embiid who can tally up 10-14 free throws at will 
+      one would assume this to be a focus of many offenses. But looking at the trends of the NBA over recent years implies
+      that trips to the line aren't as significant as you may think, and perhaps shooting efficiency once again is the 
+      more important aspect.
     </p>
   )
 }
